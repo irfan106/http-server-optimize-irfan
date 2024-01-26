@@ -1,0 +1,13 @@
+version: '3'
+services:
+  headout-assignement:
+    image: headout-assignment-irfan:v2
+    ports:
+      - "8080:8080"
+    environment:
+      - NODE_ENV=production
+    deploy:
+      resources:
+        limits:
+          cpus: '2'
+          memory: 1500M
